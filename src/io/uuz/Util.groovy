@@ -1,6 +1,6 @@
 package io.uuz;
 
-class Current {
+class Util {
     static def getUserName(self) {
         def job = Jenkins.getInstance().getItemByFullName(self.env.JOB_BASE_NAME, Job.class)
         def build = job.getBuildByNumber(self.env.BUILD_ID as int)
